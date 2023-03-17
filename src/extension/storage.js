@@ -17,3 +17,7 @@ export function getExtensionState(key) {
 
   return state
 }
+
+export function updateImageList(imagesArray) {
+  chrome.storage.local.set({ images: imagesArray })
+}
