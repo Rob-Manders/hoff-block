@@ -1,11 +1,17 @@
 {
   "name": "Hoff Block",
-  "action": {},
-  "manifest_version": 1,
+  "manifest_version": 2,
   "version": "0.1",
   "description": "Replaces ads with pictures of The Hoff (or another user-defined image).",
-  "permissions": [],
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
   "background": {
-    "service_worker": "./src/extension/something.js"
-  }
+    "service_worker": "scripts/adblock.js"
+  },
+  "web_accessible_resources": [
+    "data/domains.txt"
+  ]
 }
