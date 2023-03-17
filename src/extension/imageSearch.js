@@ -2,9 +2,9 @@ const subscriptionKey = '227637ac26314945a3ff73024b16eeb3'
 const url = 'https://api.bing.microsoft.com/v7.0/images/search'
 
 export async function searchImages(searchTerm) {
-  const searchUrl = url + encodeURIComponent(searchTerm)
+  const searchUrl = url + '?q=' + encodeURIComponent(searchTerm)
 
-  const results = {}
+  let results = {}
   
   await fetch(searchUrl, {
     method: 'GET',
