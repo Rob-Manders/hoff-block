@@ -1,0 +1,11 @@
+{
+  "name": "Hoff Block",
+  "action": {},
+  "manifest_version": 1,
+  "version": "0.1",
+  "description": "Replaces ads with pictures of The Hoff (or another user-defined image).",
+  "permissions": [],
+  "background": {
+    "service_worker": "./src/extension/something.js"
+  }
+}
